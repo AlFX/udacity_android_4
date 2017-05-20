@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.alessio.airguitar.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dillinger_escape_plan" />
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        style="@style/bar.top">
+
+        <TextView
+            android:id="@+id/tab_playlist"
+            style="@style/button.text"
+            android:text="@string/Playlist" />
+
+        <TextView
+            android:id="@+id/tab_search"
+            style="@style/button.text"
+            android:text="@string/Search" />
+
+        <TextView
+            android:id="@+id/tab_lyrics"
+            style="@style/button.text"
+            android:text="@string/Lyrics" />
+
+    </LinearLayout>
+
+
+        <TextView
+            style="@style/placeholder_text"
+            android:layout_below="@+id/topbar"
+            android:text="@string/now_playing"
+            android:textAlignment="center" />
+
+
+    <LinearLayout
+        android:id="@+id/player_keypad"
+        style="@style/bar.bottom"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            style="@style/button.player"
+            android:text="@string/frew" />
+
+        <Button
+            style="@style/button.player"
+            android:text="@string/play" />
+
+        <Button
+            style="@style/button.player"
+            android:text="@string/ffwd" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

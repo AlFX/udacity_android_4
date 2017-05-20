@@ -1,0 +1,64 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:background">@color/colorLightBlack</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="button.player">
+        <item name="android:textSize">48sp</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="bar.top">
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="bar.bottom">
+        <item name="android:layout_height">118dp</item>
+    </style>
+
+    <style name="bar.middle">
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="button.text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="placeholder_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@color/colorLightBlack</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="placeholder_text.list">
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+
+</resources>

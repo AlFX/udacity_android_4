@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.alessio.airguitar.PlaylistActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dillinger_escape_plan" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/topbar"
+            style="@style/bar.top">
+
+            <TextView
+                android:id="@+id/tab_player"
+                style="@style/button.text"
+                android:text="@string/Player" />
+
+            <TextView
+                android:id="@+id/tab_playlist"
+                style="@style/button.text"
+                android:text="@string/Playlist" />
+
+            <TextView
+                android:id="@+id/tab_search"
+                style="@style/button.text"
+                android:text="@string/Search" />
+
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/bar.middle">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    style="@style/bar.middle"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/topbar" >
+
+                    <TextView
+                        style="@style/placeholder_text.list"
+                        android:layout_height="match_parent"
+                        android:text="@string/Lyrics_text" />
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/player_keypad"
+            style="@style/bar.bottom"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                style="@style/button.player"
+                android:text="@string/frew" />
+
+            <Button
+                style="@style/button.player"
+                android:text="@string/play" />
+
+            <Button
+                style="@style/button.player"
+                android:text="@string/ffwd" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
