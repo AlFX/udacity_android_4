@@ -41,7 +41,13 @@
 
         </LinearLayout>
 
-        <LinearLayout style="@style/bar.middle">
+        <LinearLayout
+            style="@style/bar.middle"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/placeholder_text.expl"
+                android:text="@string/expl_lyrics" />
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -50,7 +56,8 @@
                 <LinearLayout
                     style="@style/bar.middle"
                     android:layout_height="match_parent"
-                    android:layout_below="@+id/topbar" >
+                    android:layout_below="@+id/topbar">
+
 
                     <TextView
                         style="@style/placeholder_text.list"

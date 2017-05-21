@@ -19,113 +19,118 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/topbar"
-        style="@style/bar.top">
+        <LinearLayout
+            android:id="@+id/topbar"
+            style="@style/bar.top">
 
-        <TextView
-            android:id="@+id/tab_player"
-            style="@style/button.text"
-            android:text="@string/Player" />
+            <TextView
+                android:id="@+id/tab_player"
+                style="@style/button.text"
+                android:text="@string/Player" />
 
-        <TextView
-            android:id="@+id/tab_search"
-            style="@style/button.text"
-            android:text="@string/Search" />
+            <TextView
+                android:id="@+id/tab_search"
+                style="@style/button.text"
+                android:text="@string/Search" />
 
-        <TextView
-            android:id="@+id/tab_lyrics"
-            style="@style/button.text"
-            android:text="@string/Lyrics" />
+            <TextView
+                android:id="@+id/tab_lyrics"
+                style="@style/button.text"
+                android:text="@string/Lyrics" />
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="4">
-
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
 
-            <LinearLayout
+            <TextView
+                style="@style/placeholder_text.expl"
+                android:text="@string/expl_playlist" />
+
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/topbar"
-                android:orientation="vertical">
+                android:layout_height="match_parent">
 
-                <TextView
-                    style="@style/placeholder_text.list"
-                    android:text="@string/Track" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/topbar"
+                    android:orientation="vertical">
 
-                <TextView
-                    style="@style/placeholder_text.list"
-                    android:text="@string/Track" />
+                    <TextView
+                        style="@style/placeholder_text.list"
+                        android:text="@string/Track" />
 
-                <TextView
-                    style="@style/placeholder_text.list"
-                    android:text="@string/Track" />
+                    <TextView
+                        style="@style/placeholder_text.list"
+                        android:text="@string/Track" />
 
-                <TextView
-                    style="@style/placeholder_text.list"
-                    android:text="@string/Track" />
+                    <TextView
+                        style="@style/placeholder_text.list"
+                        android:text="@string/Track" />
 
-                <TextView
-                    style="@style/placeholder_text.list"
-                    android:text="@string/Track" />
+                    <TextView
+                        style="@style/placeholder_text.list"
+                        android:text="@string/Track" />
 
-                <TextView
-                    style="@style/placeholder_text.list"
-                    android:text="@string/Track" />
+                    <TextView
+                        style="@style/placeholder_text.list"
+                        android:text="@string/Track" />
 
-                <TextView
-                    style="@style/placeholder_text.list"
-                    android:text="@string/Track" />
+                    <TextView
+                        style="@style/placeholder_text.list"
+                        android:text="@string/Track" />
 
-                <TextView
-                    style="@style/placeholder_text.list"
-                    android:text="@string/Track" />
+                    <TextView
+                        style="@style/placeholder_text.list"
+                        android:text="@string/Track" />
 
-                <TextView
-                    style="@style/placeholder_text.list"
-                    android:text="@string/Track" />
+                    <TextView
+                        style="@style/placeholder_text.list"
+                        android:text="@string/Track" />
 
-                <TextView
-                    style="@style/placeholder_text.list"
-                    android:text="@string/Track" />
+                    <TextView
+                        style="@style/placeholder_text.list"
+                        android:text="@string/Track" />
 
-                <TextView
-                    style="@style/placeholder_text.list"
-                    android:text="@string/Track" />
+                    <TextView
+                        style="@style/placeholder_text.list"
+                        android:text="@string/Track" />
 
-                <TextView
-                    style="@style/placeholder_text.list"
-                    android:text="@string/Track" />
+                    <TextView
+                        style="@style/placeholder_text.list"
+                        android:text="@string/Track" />
 
-            </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
+                    <TextView
+                        style="@style/placeholder_text.list"
+                        android:text="@string/Track" />
 
-    <LinearLayout
-        android:id="@+id/player_keypad"
-        style="@style/bar.bottom"
-        android:layout_alignParentBottom="true">
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
 
-        <Button
-            style="@style/button.player"
-            android:text="@string/frew" />
+        <LinearLayout
+            android:id="@+id/player_keypad"
+            style="@style/bar.bottom"
+            android:layout_alignParentBottom="true">
 
-        <Button
-            style="@style/button.player"
-            android:text="@string/play" />
+            <Button
+                style="@style/button.player"
+                android:text="@string/frew" />
 
-        <Button
-            style="@style/button.player"
-            android:text="@string/ffwd" />
+            <Button
+                style="@style/button.player"
+                android:text="@string/play" />
+
+            <Button
+                style="@style/button.player"
+                android:text="@string/ffwd" />
 
 
-    </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>

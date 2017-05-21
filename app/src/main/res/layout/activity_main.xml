@@ -36,12 +36,17 @@
     </LinearLayout>
 
 
-        <TextView
-            style="@style/placeholder_text"
-            android:layout_below="@+id/topbar"
-            android:text="@string/now_playing"
-            android:textAlignment="center" />
+    <TextView
+        style="@style/placeholder_text"
+        android:layout_below="@id/topbar"
+        android:id="@+id/now_playing"
+        android:gravity="center"
+        android:text="@string/now_playing" />
 
+    <TextView
+        android:layout_above="@id/player_keypad"
+        style="@style/placeholder_text.expl"
+        android:text="@string/expl_main" />
 
     <LinearLayout
         android:id="@+id/player_keypad"

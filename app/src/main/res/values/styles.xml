@@ -43,7 +43,7 @@
     <style name="button.text">
         <item name="android:textSize">18sp</item>
         <item name="android:padding">12dp</item>
-        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
     </style>
 
     <style name="placeholder_text">
@@ -53,11 +53,16 @@
         <item name="android:padding">12dp</item>
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:background">@color/colorLightBlack</item>
-        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
     </style>
 
     <style name="placeholder_text.list">
-        <item name="android:textAlignment">textStart</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="placeholder_text.expl">
+        <item name="android:textColor">#000</item>
+        <item name="android:background">@color/expl</item>
     </style>
 
 

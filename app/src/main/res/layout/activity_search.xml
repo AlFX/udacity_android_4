@@ -36,29 +36,37 @@
 
         </LinearLayout>
 
-        <LinearLayout style="@style/bar.middle"
+        <TextView
+            style="@style/placeholder_text.expl"
+            android:text="@string/expl_search" />
+
+        <TextView
+            style="@style/placeholder_text.expl"
+            android:background="#95ffffff"
+
+            android:text="this is how I probably should implement it:\nhttps://developer.android.com/training/search/search.html" />
+
+
+        <LinearLayout
+            style="@style/bar.middle"
             android:layout_height="match_parent"
             android:background="@color/colorLightBlack"
             android:gravity="center_vertical"
-            >
+            android:orientation="vertical">
+
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Search!"
-                android:textStyle="bold"
                 android:textAlignment="center"
-                android:textSize="100sp"
                 android:textColor="@color/colorLight"
                 android:textColorHint="@color/colorLight"
-                />
+                android:textSize="100sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
-
-<!--        <LinearLayout style="@style/bar.bottom"
-            android:background="@color/colorLightBlack">
-
-        </LinearLayout>-->
 
     </LinearLayout>
 
